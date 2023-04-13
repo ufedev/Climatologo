@@ -55,7 +55,7 @@ const Carta = () => {
         );
         return;
       }
-      const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${ciudad},${pais}&appid=0b678d79a054053517e655955021ace2`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${ciudad},${pais}&appid={YOUR_API_KEY}`;
       const req = await fetch(url);
       const res = await req.json();
 
